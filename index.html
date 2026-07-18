@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity | Creative Developer Portfolio</title>
+    <meta name="description" content="안녕하세요, 아름답고 직관적인 웹 서비스를 만드는 프론트엔드 개발자 Antigravity의 포트폴리오입니다.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements for Premium Glassmorphism Depth -->
+    <div class="blob-bg-1"></div>
+    <div class="blob-bg-2"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="navLogo">
+                <span class="logo-text">ANTIGRAVITY</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme">
+                    <!-- Sun Icon (shown in dark theme) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.72" x2="5.64" y2="18.3"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon Icon (shown in light theme) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content fade-in-element">
+                    <div class="badge">Welcome to my space</div>
+                    <h1 class="hero-title">
+                        안녕하세요, <br>
+                        <span class="gradient-text" id="heroName">Antigravity</span> 입니다.
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        저는 <span class="typing-text" id="typingText">Creative Developer</span> 입니다.
+                    </h2>
+                    <p class="hero-description">
+                        현대적이고 감각적인 디자인과 완성도 높은 코드를 지향합니다. 사용자 경험을 극대화하고 생동감 넘치는 웹 인터랙션을 설계하는 프론트엔드 개발자입니다.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                        <a href="#contact" class="btn btn-secondary">연락하기</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper fade-in-element">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-image-container">
+                        <img src="profile.png" alt="Antigravity Profile Avatar" class="profile-img">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down-indicator">
+                <span class="mouse-icon">
+                    <span class="mouse-wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header fade-in-element">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">스토리 & 핵심 기술</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text fade-in-element">
+                        <h3>문제를 해결하는 크리에이티브 개발자</h3>
+                        <p>
+                            단순한 코드 작성을 넘어 사용자 인터페이스가 선사하는 느낌과 흐름에 집중합니다. UI/UX 디자인 감각을 겸비하여 기획 단계부터 완성 단계까지 정밀하게 세련된 인터랙션을 설계합니다.
+                        </p>
+                        <p>
+                            최적화된 성능과 클린 코드를 추구하며, 새로운 기술의 도입을 두려워하지 않고 빠른 실행력으로 문제를 돌파해 나갑니다.
+                        </p>
+
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <span class="info-label">이메일</span>
+                                <span class="info-value">hello@antigravity.dev</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">위치</span>
+                                <span class="info-value">Seoul, South Korea</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">역할</span>
+                                <span class="info-value">Front-end Developer / UI Designer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-showcase fade-in-element">
+                        <h3>Core Tech Stack</h3>
+                        <div class="skills-grid">
+                            <!-- Skill 1 -->
+                            <div class="skill-card">
+                                <div class="skill-icon-wrap html-color">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16.5 9.4 7.55 4.24a1.78 1.78 0 0 0-2.5 1.55v12.42a1.78 1.78 0 0 0 2.5 1.55L16.5 14.6a1.78 1.78 0 0 0 0-3.2z"></path>
+                                    </svg>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>HTML5 / CSS3</h4>
+                                    <p>웹 표준, 시맨틱 마크업, 반응형 레이아웃 및 화려한 CSS3 애니메이션 구현</p>
+                                </div>
+                            </div>
+                            <!-- Skill 2 -->
+                            <div class="skill-card">
+                                <div class="skill-icon-wrap js-color">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                    </svg>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>JavaScript (ES6+)</h4>
+                                    <p>비동기 프로그래밍, DOM 조작 및 프레임워크 없는 리액티브 스크립트 작성</p>
+                                </div>
+                            </div>
+                            <!-- Skill 3 -->
+                            <div class="skill-card">
+                                <div class="skill-icon-wrap ui-color">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                                        <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path>
+                                    </svg>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>UI/UX & Design</h4>
+                                    <p>피그마 기반 디자인 시스템 기획 및 미세한 인터랙션 디테일 튜닝</p>
+                                </div>
+                            </div>
+                            <!-- Skill 4 -->
+                            <div class="skill-card">
+                                <div class="skill-icon-wrap perf-color">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                                    </svg>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Optimization</h4>
+                                    <p>웹 성능 최적화, 경량화 및 부드러운 60fps 프레임 렌더링 설계</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header fade-in-element">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">주요 프로젝트</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card fade-in-element">
+                        <div class="project-img-container">
+                            <div class="project-gradient-overlay g1"></div>
+                            <div class="project-icon-top">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3h18v18H3V3z"></path>
+                                    <path d="M21 9H3M21 15H3M12 3v18"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-tag-badge">Web App</span>
+                                <span class="project-tag-badge">Vanilla JS</span>
+                            </div>
+                            <h3 class="project-title">Interactive Data Dashboard</h3>
+                            <p class="project-desc">
+                                웹 인터랙션과 실시간 데이터 스트리밍을 모니터링하기 위한 대시보드 인터페이스입니다. 경량 차트 라이브러리를 직접 커스터마이징하여 최적의 성능을 보여줍니다.
+                            </p>
+                            <a href="#" class="project-link" onclick="event.preventDefault();">
+                                자세히 보기 
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card fade-in-element">
+                        <div class="project-img-container">
+                            <div class="project-gradient-overlay g2"></div>
+                            <div class="project-icon-top">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-tag-badge">E-Commerce</span>
+                                <span class="project-tag-badge">CSS Grid</span>
+                            </div>
+                            <h3 class="project-title">Premium Shop Concept</h3>
+                            <p class="project-desc">
+                                미니멀리즘 디자인 가이드를 반영한 프리미엄 쇼핑 플랫폼 컨셉입니다. 스무스 스크롤과 마우스 트래킹 호버 효과를 정교하게 담아냈습니다.
+                            </p>
+                            <a href="#" class="project-link" onclick="event.preventDefault();">
+                                자세히 보기
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card fade-in-element">
+                        <div class="project-img-container">
+                            <div class="project-gradient-overlay g3"></div>
+                            <div class="project-icon-top">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-tag-badge">3D Graphics</span>
+                                <span class="project-tag-badge">HTML Canvas</span>
+                            </div>
+                            <h3 class="project-title">Creative Space Experiment</h3>
+                            <p class="project-desc">
+                                HTML5 Canvas와 복합 삼각함수를 활용한 우주 성운 시뮬레이션 디지털 아트워크 공간입니다. 마우스 드래그를 통해 아름다운 잔상을 만듭니다.
+                            </p>
+                            <a href="#" class="project-link" onclick="event.preventDefault();">
+                                자세히 보기
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-icon">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header fade-in-element">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="section-title">함께 프로젝트를 준비해봐요</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-panel fade-in-element">
+                        <h3>언제든 편하게 다가오세요!</h3>
+                        <p>새로운 아이디어를 구상 중이시거나 멋진 협업 제안을 하실 분들의 연락을 언제나 기다리고 있습니다. 아래 연락처 혹은 우측의 간편 폼을 이용해 메시지를 보내주세요.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="detail-text">
+                                    <span class="detail-label">이메일</span>
+                                    <a href="mailto:hello@antigravity.dev" class="detail-value">hello@antigravity.dev</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div class="detail-text">
+                                    <span class="detail-label">전화번호</span>
+                                    <span class="detail-value">+82 10-1234-5678</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-icon-btn" aria-label="GitHub" onclick="event.preventDefault();">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon-btn" aria-label="LinkedIn" onclick="event.preventDefault();">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon-btn" aria-label="Twitter" onclick="event.preventDefault();">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel fade-in-element">
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="userName">이름</label>
+                                <input type="text" id="userName" name="name" placeholder="이름을 입력해주세요" required>
+                                <span class="error-msg" id="nameError">이름을 정확하게 입력해주세요.</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="userEmail">이메일 주소</label>
+                                <input type="email" id="userEmail" name="email" placeholder="email@example.com" required>
+                                <span class="error-msg" id="emailError">올바른 이메일 주소를 입력해주세요.</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="userMessage">메시지</label>
+                                <textarea id="userMessage" name="message" rows="5" placeholder="프로젝트 제안이나 나누고 싶은 이야기를 적어주세요." required></textarea>
+                                <span class="error-msg" id="messageError">메시지를 10자 이상 입력해주세요.</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>메시지 전송하기</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="send-icon">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                        
+                        <!-- Success Message Overlay -->
+                        <div class="form-success-overlay" id="formSuccessOverlay">
+                            <div class="success-content">
+                                <div class="success-icon-wrap">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <h3>전송이 완료되었습니다!</h3>
+                                <p>보내주신 소중한 메시지는 성공적으로 기록되었습니다. 검토 후 신속하게 회신해 드리겠습니다.</p>
+                                <button class="btn btn-secondary btn-reset" id="btnResetForm">새로운 메시지 보내기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Antigravity. All rights reserved.</p>
+            <a href="#home" class="back-to-top" aria-label="Go to top">
+                <span>Top</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="19" x2="12" y2="5"></line>
+                    <polyline points="5 12 12 5 19 12"></polyline>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
